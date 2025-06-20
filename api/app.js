@@ -1,16 +1,16 @@
 // api/app.js
 const express = require("express");
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
+const dotenv = require("dotenv");
 
 dotenv.config();
 const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://192.168.0.199:5173',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
 }));
