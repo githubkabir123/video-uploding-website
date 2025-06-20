@@ -38,6 +38,10 @@ const videoRoutes = require("./routes/videoRoutes");
 const districtRoutes = require("./routes/districtRoutes");
 const userRoutes = require("./routes/userRoutes");
 
+app.get('/hello', (req, res) => {
+  res.json({ message: 'Hello from Express API on Vercel!' });
+});
+
 
 
 
