@@ -5,6 +5,7 @@ const path = require("path");
 
 
 exports.uploadVideo = async (req, res) => {
+  // console.log('💡 Upload route hit');
   try {
     const { title } = req.body;
     const fileUrl = `/uploads/videos/${req.file.filename}`;

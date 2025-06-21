@@ -142,6 +142,7 @@ const VideoUploadForm = () => {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,
         },
+        withCredentials: true
       });
 
       alert("✅ Video uploaded successfully.");
